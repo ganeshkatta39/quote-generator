@@ -1,0 +1,32 @@
+$primary-color : #0f2027;
+$secondary-color : #f1faee;
+$tirtuary-color: #ffba08;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin transition-ease {
+    transition: all .5s ease-in-out;
+}
+
+
+@mixin media-md {
+    @media only screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media only screen and (min-width: 400px){
+        @content;
+    }
+}
+
